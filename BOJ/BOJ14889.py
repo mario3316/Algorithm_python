@@ -1,4 +1,5 @@
 # 스타트와 링크
+# 완전탐색, Brute Force
 from itertools import combinations, permutations
 
 
