@@ -21,7 +21,7 @@ def calc_points(ryan, apeach):
         else:
             if not ryan[i] == 0 or not apeach[i] == 0:
                 apeach_point += 10 - i
-                
+
     return ryan_point - apeach_point
 
 
@@ -30,6 +30,7 @@ def solution(n, info):
     max_point = 0
 
     for i in combinations_with_replacement(range(11), n):
+        print(i)
         selected = [0 for _ in range(11)]
         for j in i:
             selected[j] += 1
@@ -42,5 +43,4 @@ def solution(n, info):
 
     return answer
 
-
-print(solution(10, [0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 3]))
+# print(solution(10, [0, 0, 0, 0, 0, 0, 0, 0, 3, 4, 3]))
